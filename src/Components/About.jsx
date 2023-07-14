@@ -70,7 +70,7 @@ const About = () => {
                   </div>
                   <div className="">
                     <h3 className="text-[15px] font-bold text-lightgray  lg:text-[18px]">
-                     EMAIL
+                      EMAIL
                     </h3>
 
                     <p className="text-[13px] lg:text-[15px] text-lightgray tracking-wide">
