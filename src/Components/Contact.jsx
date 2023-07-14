@@ -42,7 +42,7 @@ const Contact = () => {
   return (
     <section className=" min-h-[70vh] lg:min-h-[70vh] flex items-center lg:section" id="contact">
       <div className="container mx-auto">
-        <div className="flex flex-col  text-center lg:text-left lg:items-start lg:flex-row ">
+        <div className="flex flex-col items-center text-center md:text-left md:items-start md:flex-row ">
           {/* text */}
           <motion.div
             variants={fadeIn("right", 0.7)}
