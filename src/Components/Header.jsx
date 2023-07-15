@@ -7,6 +7,7 @@ import { TypeAnimation } from "react-type-animation";
 import Image1 from "../assets/newava2.png";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants.js";
+import { Link } from "react-scroll";
 const Header = () => {
   return (
     <section
@@ -29,7 +30,7 @@ const Header = () => {
                 key={index.id}
                 variants={fadeIn("right", 0.7)}
                 initial="hidden"
-               whileInView={"show"}
+                whileInView={"show"}
                 className="text-[30px] md:text-[45px] lg:text-[px] tracking-wide"
               >
                 I am {index.name}
@@ -37,14 +38,14 @@ const Header = () => {
               <div
                 variants={fadeIn("right", 0.9)}
                 initial="hidden"
-               whileInView={"show"}
+                whileInView={"show"}
                 className="font-light text-lightgray  tracking-wide font-neue text-[20px]  "
               >
                 <motion.p
                   key={index.id}
                   variants={fadeIn("right", 1.1)}
                   initial="hidden"
-                 whileInView={"show"}
+                  whileInView={"show"}
                   className=" lg:text-[21px] text-[15px]"
                 >
                   {index.describe}
@@ -52,7 +53,7 @@ const Header = () => {
                 <motion.p
                   variants={fadeIn("right", 1.3)}
                   initial="hidden"
-                 whileInView={"show"}
+                  whileInView={"show"}
                   className="font-bold mt-3 text-[15px]  lg:text-[21px]"
                 >
                   <TypeAnimation
@@ -73,18 +74,20 @@ const Header = () => {
                 <motion.p
                   variants={fadeIn("right", 1.5)}
                   initial="hidden"
-                 whileInView={"show"}
+                  whileInView={"show"}
                   className="text-[15px]   lg:text-[21px] mt-3  "
                 >
-                  <a className="border-b-black border-b-2 font-roman text-black cursor-pointer  ">
-                    Get in Touch
-                  </a>
+                  <Link to="contact" spy={true} smooth={true} offset={-100}>
+                    <a className="border-b-black border-b-2 font-roman text-black cursor-pointer  ">
+                      Get in Touch
+                    </a>
+                  </Link>
                 </motion.p>
               </div>
               <motion.div
                 variants={fadeIn("right", 1.7)}
                 initial="hidden"
-               whileInView={"show"}
+                whileInView={"show"}
                 className="flex text-[20px] items-center justify-center lg:justify-start gap-x-6 mt-5"
               >
                 <a
@@ -118,10 +121,10 @@ const Header = () => {
         <motion.div
           variants={fadeIn("left", 1.8)}
           initial="hidden"
-         whileInView={"show"}
+          whileInView={"show"}
           className=" max-w-[250px]  md:flex   lg:max-w-[450px]"
         >
-          <img  className="" src={Image1} />
+          <img className="" src={Image1} />
         </motion.div>
       </div>
     </section>
