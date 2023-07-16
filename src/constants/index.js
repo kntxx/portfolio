@@ -1,6 +1,4 @@
-import { projectspic } from "../assets"; 
-
-
+import projectspic from "../assets/projectspic.png";
 
 export const navLinks = [
   {
@@ -37,23 +35,30 @@ export const aboutDetails = [
       "As a college student pursuing a Bachelor of Science degree in Information Technology, I have been actively expanding my skills in Front-End Development.",
     describe2:
       "My focus has been on mastering technologies such as HTML, CSS, Javascript, React, and Tailwind CSS to create engaging and dynamic user experiences.",
-    name: "Kent Joseph A. Gesoro",
-    email: "kentatixx@gmail.com",
   },
-  
 ];
+
+export const namess = [
+  {
+    id: 5,
+    name: "NAME",
+    email: "EMAIL",
+    nameDescription: "Kent Joseph A. Gesoro",
+    emailDescription: "kentatixx@gmail.com",
+  },
+];
+
 export const projss = [
   {
     id: 3,
-    img: projectspic
+    img: projectspic,
   },
   {
     id: 4,
-    img: projectspic
+    img: projectspic,
   },
   {
     id: 5,
-    img: projectspic
+    img: projectspic,
   },
-
-]
+];
