@@ -27,7 +27,7 @@ const Footer = () => {
             className="flex flex-row gap-x-2 items-center"
           >
             <a
-              href="https://www.facebook.com/yourfacebookpage"
+              href="https://www.facebook.com/tnek18"
               className=" transition-transform duration-300 hover:scale-150"
               title="Visit our Facebook page"
               target="_blank"
