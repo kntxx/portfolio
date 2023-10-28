@@ -10,7 +10,7 @@ const Projects = () => {
       id="project"
     >
       <div className="container mx-auto relative">
-        <div className="flex flex-col gap-y-[90px]">
+        <div className="flex flex-col gap-y-[40px] lg:gap-y-[90px]">
           <motion.div
             variants={fadeIn("down", 0.5)}
             initial="hidden"
@@ -26,7 +26,7 @@ const Projects = () => {
               variants={fadeIn("down", 0.7)}
               initial="hidden"
               whileInView={"show"}
-              className="group relative max-w-[200px] md:max-w-[500px]  overflow-hidden border border-lightgray/50 rounded-lg"
+              className="group relative max-w-[300px] md:max-w-[500px]  overflow-hidden border border-lightgray/50 rounded-lg"
             >
               <div className=" cursor-pointer  group-hover:bg-black/70 w-full h-full absolute z-10 transition-all duration-300"></div>
 
@@ -55,7 +55,7 @@ const Projects = () => {
               variants={fadeIn("down", 0.9)}
               initial="hidden"
               whileInView={"show"}
-              className="group relative max-w-[200px] md:max-w-[500px]  overflow-hidden border border-black/50 rounded"
+              className="group relative max-w-[300px] md:max-w-[500px]  overflow-hidden border border-black/50 rounded"
             >
               <div className=" cursor-pointer  group-hover:bg-black/70 w-full h-full absolute z-10 transition-all duration-300"></div>
 
@@ -68,7 +68,7 @@ const Projects = () => {
               variants={fadeIn("down", 1)}
               initial="hidden"
               whileInView={"show"}
-              className="group relative max-w-[200px] md:max-w-[500px]  overflow-hidden border border-black/50 rounded"
+              className="group relative max-w-[300px] md:max-w-[500px]  overflow-hidden border border-black/50 rounded"
             >
               <div className=" cursor-pointer  group-hover:bg-black/70 w-full h-full absolute z-10 transition-all duration-300"></div>
 
